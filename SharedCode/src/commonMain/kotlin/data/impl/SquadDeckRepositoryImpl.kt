@@ -1,7 +1,7 @@
 package data.impl
 
 import data.DeckRepository
-import domain.model.Card
+import data.model.Card
 
 object SquadDeckRepositoryImpl: DeckRepository {
 

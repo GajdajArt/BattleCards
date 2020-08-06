@@ -1,9 +1,9 @@
 package data.impl
 
 import data.DeckRepository
-import domain.model.ActionType
-import domain.model.Card
-import domain.model.CardType
+import data.model.ActionType
+import data.model.Card
+import data.model.CardType
 
 object ActionDeckRepositoryImpl : DeckRepository {
 

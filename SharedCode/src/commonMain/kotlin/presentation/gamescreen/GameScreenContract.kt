@@ -1,6 +1,6 @@
 package presentation.gamescreen
 
-import domain.model.Card
+import data.model.Card
 import presentation.BaseView
 
 interface GameScreenContract {

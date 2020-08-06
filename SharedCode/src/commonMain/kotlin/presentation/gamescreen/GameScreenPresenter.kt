@@ -1,7 +1,7 @@
 package presentation.gamescreen
 
-import domain.model.Card
-import domain.model.GamePhase
+import data.model.Card
+import data.model.GamePhase
 import presentation.BasePresenter
 
 class GameScreenPresenter: BasePresenter<GameScreenContract.View>(), GameScreenContract.Presenter {

@@ -1,6 +1,6 @@
 package domain
 
-import domain.model.Card
+import data.model.Card
 
 interface ShuffleDeckInteractor {
 

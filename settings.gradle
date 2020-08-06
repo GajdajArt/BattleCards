@@ -1,0 +1,4 @@
+include ':server'
+include ':app'
+include ':SharedCode'
+rootProject.name = "Battle Cards"

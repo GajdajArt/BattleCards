@@ -1,4 +1,4 @@
-package domain.model
+package data.model
 
 enum class CardType {
     SQUAD,
