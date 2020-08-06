@@ -1,7 +1,7 @@
 package domain.impl
 
 import domain.ShuffleDeckInteractor
-import domain.model.Card
+import data.model.Card
 
 class ShuffleDeckInteractorImpl: ShuffleDeckInteractor {
 

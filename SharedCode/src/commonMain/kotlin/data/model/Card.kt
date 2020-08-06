@@ -1,4 +1,4 @@
-package domain.model
+package data.model
 
 data class Card(
     val id: String,

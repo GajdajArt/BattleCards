@@ -1,6 +1,6 @@
 package data
 
-import domain.model.Card
+import data.model.Card
 
 interface DeckRepository {
 
