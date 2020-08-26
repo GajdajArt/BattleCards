@@ -1,10 +1,14 @@
 package com.example.battlecardbackend
 
 import com.google.gson.Gson
+import data.impl.ServerSocketClient.Companion.HOST
+import data.impl.ServerSocketClient.Companion.PORT
+import data.impl.ServerSocketClient.Companion.TEST_PATH
 import io.ktor.application.install
 import io.ktor.features.CallLogging
 import io.ktor.features.ContentNegotiation
 import io.ktor.gson.gson
+import io.ktor.http.cio.websocket.Frame
 import io.ktor.http.cio.websocket.pingPeriod
 import io.ktor.http.cio.websocket.timeout
 import io.ktor.routing.routing
@@ -17,7 +21,7 @@ import java.time.Duration
 class SocketService {
 
     fun start() {
-        val server = embeddedServer(Netty, 8080, host = HOST) {
+        val server = embeddedServer(Netty, PORT, host = HOST) {
 
             install(CallLogging)
 
@@ -38,6 +42,10 @@ class SocketService {
             routing {
                 webSocket(path = STATUS_PATH) {
 
+                }
+
+                webSocket(path = TEST_PATH) {
+                    send(Frame.Text("This is the webSocket"))
                 }
             }
         }
