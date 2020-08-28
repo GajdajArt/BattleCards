@@ -1,10 +1,11 @@
-package presentation.gamescreen
+package presentation.screen.game
 
 import data.model.Card
 import data.model.GamePhase
 import presentation.BasePresenter
 
-class GameScreenPresenter: BasePresenter<GameScreenContract.View>(), GameScreenContract.Presenter {
+class GameScreenPresenter: BasePresenter<GameScreenContract.View>(),
+    GameScreenContract.Presenter {
 
     private var currentPhase: GamePhase = GamePhase.HAND_OVER
 

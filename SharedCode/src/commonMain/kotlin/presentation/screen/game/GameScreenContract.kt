@@ -1,4 +1,4 @@
-package presentation.gamescreen
+package presentation.screen.game
 
 import data.model.Card
 import presentation.BaseView

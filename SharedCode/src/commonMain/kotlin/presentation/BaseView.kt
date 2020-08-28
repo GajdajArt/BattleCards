@@ -1,3 +1,12 @@
 package presentation
 
-interface BaseView
+interface BaseView {
+
+    fun showProgress()
+
+    fun hideProgress()
+
+    fun showWaitForEnemy()
+
+    fun hideWaitForEnemy()
+}
