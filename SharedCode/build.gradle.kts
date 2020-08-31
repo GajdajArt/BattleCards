@@ -22,12 +22,16 @@ kotlin {
 
     jvm("android")
 
-    sourceSets["commonMain"].dependencies {
-        implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
-    }
+    sourceSets {
+        val commonMain by getting {
+            dependencies {
+                //Kotlin
+                implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
 
-    sourceSets["androidMain"].dependencies {
-        implementation("org.jetbrains.kotlin:kotlin-stdlib")
+                //Kodein-DI
+                implementation("org.kodein.di:kodein-di:7.0.0")
+            }
+        }
     }
 }
 
